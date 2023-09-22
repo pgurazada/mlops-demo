@@ -34,7 +34,10 @@ if __name__ == '__main__':
     )
 
     Xtrain.to_csv('data/20230921_training_features.csv', index=False)
-    ytrain.to_csv('data/20230206_training_target.csv', index=False)
+    ytrain.to_csv('data/20230921_training_target.csv', index=False)
+
+    Xtest.to_csv('data/20230921_test_features.csv', index=False)
+    ytest.to_csv('data/20230921_test_target.csv', index=False)
 
     preprocessor = make_column_transformer(
         (StandardScaler(), numeric_features),
