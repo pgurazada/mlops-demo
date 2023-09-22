@@ -34,4 +34,4 @@ jobs:
         run: python train.py
 
       - name: Persist artifacts to the repo
-      - uses: stefanzweifel/git-auto-commit-action@v4
+        uses: stefanzweifel/git-auto-commit-action@v4
